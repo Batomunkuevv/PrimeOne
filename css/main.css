@@ -136,8 +136,135 @@ body {
   visibility: hidden;
 }
 
+.header {
+  padding: 30px 0 80px;
+}
+
+.header__menu {
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header__logo::before, .header__logo::after {
+  font-family: Bebas;
+  font-size: 0.5rem;
+  line-height: 1.39;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: #000000;
+  position: absolute;
+}
+
+.header__logo::before {
+  content: "NYC'S";
+  top: -50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.header__logo::after {
+  content: "Catering";
+  top: 150%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0px 0px 39px 0px;
+}
+
+.header-top__order {
+  font-size: 0.75rem;
+  color: #000000;
+  line-height: 1.667;
+  text-transform: uppercase;
+  padding: 1px;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header-top-language {
+  font-family: Bebas;
+  font-size: 0.625rem;
+  line-height: 2.5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header-top-language a {
+  padding: 5px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.header-top-language a:hover {
+  background: #000;
+  color: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 -10px;
+  color: #000000;
+}
+
+.menu__link {
+  font-size: 0.75rem;
+  line-height: 1.667;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.menu li {
+  padding: 0 10px;
+  position: relative;
+}
+
+.menu li:nth-child(3) {
+  padding: 0px 170px 0px 10px;
+}
+
+.menu li:nth-child(4) {
+  padding: 0px 10px 0px 170px;
+}
+
 .footer {
-  padding: 0px 0px 0px 0px;
+  padding: 50px 0;
 }
 
 .footer__row {
@@ -150,4 +277,19 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.footer__copy {
+  font-family: "PT Sans";
+  font-size: 0.9375rem;
+  line-height: 1.667;
+  color: #4d4d4d;
+}
+
+.footer__copy span {
+  text-decoration: underline;
+}
+
+.footer__logo {
+  max-width: 100%;
 }
