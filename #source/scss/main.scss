@@ -133,10 +133,6 @@ body {
 	}
 
 	&__title {
-		font-size: 4rem;
-		line-height: 1.125;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
 		margin: 0px 0px 20px 0px;
 		width: 50%;
 	}
@@ -197,6 +193,13 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: #fffffe;
+}
+
+.title {
+	font-size: 4rem;
+	line-height: 1.125;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 //</Offer>===================================================================================================
@@ -296,7 +299,201 @@ body {
 
 //<Advantages>====================================================================================================
 
+.advantages {
+	padding: 50px 0;
+
+	background: #ebebeb;
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	&__column {
+		padding: 0 15px;
+		flex: 1 1 50%;
+		&:nth-child(1) {
+			margin: 0px 0px 40px 0px;
+		}
+		&:nth-child(2) {
+			margin: 0px 0px 40px 0px;
+		}
+	}
+
+	&__item {
+	}
+}
+
+.item-advantages {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	&__image {
+		border-radius: 20px;
+		background: #fff;
+		padding: 15px;
+		& img {
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		font-size: 1.5rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #000000;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__text {
+		font-family: "PT Sans";
+		font-size: 1rem;
+		line-height: 1;
+		color: #000000;
+	}
+}
+
 //</Advantages>====================================================================================================
+
+//<Contacts>=======================================================================================================
+
+.contacts {
+	padding: 75px 0 8px;
+	&__title {
+		margin: 0px 0px 35px 0px;
+		color: #000000;
+	}
+
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 50%;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__link {
+		margin: 0px 20px 0px 0px;
+		&:nth-child(1) {
+			margin: 0px 20px 0px -7px;
+		}
+		& a {
+			padding: 10px;
+		}
+	}
+}
+
+.item-contacts {
+	&__image {
+		margin: 0px 10px 0px 0px;
+		& img {
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		font-family: "PT Sans";
+		font-size: 1rem;
+		line-height: 1.667;
+		color: #000000;
+	}
+}
+
+//</Contacts>====================================================================================================
+
+//<Location>=====================================================================================================
+
+.location {
+	background: #000;
+	&__row {
+		display: flex;
+	}
+
+	&__column {
+		flex: 1 1 50%;
+	}
+
+	&__item {
+		height: 100%;
+		position: relative;
+	}
+
+	&__image {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&__body {
+		padding: 55px 0px 55px 60px;
+	}
+
+	&__title {
+		font-size: 2rem;
+		line-height: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #ffffff;
+		margin: 0px 0px 28px 0px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 55%;
+		font-family: "PT Sans";
+	}
+
+	&__input {
+		margin: 0px 0px 20px 0px;
+		border: 2px solid #959595;
+		background: #252525;
+		font-size: 1.125rem;
+		line-height: 3.5;
+		padding: 0px 0px 0px 10px;
+	}
+
+	&__textarea {
+		height: 100px;
+		padding: 0px 0px 0px 10px;
+		font-size: 1.125rem;
+		line-height: 1.667;
+		background: #252525;
+		margin: 0px 0px 20px 0px;
+		border: 2px solid #959595;
+		resize: none;
+	}
+
+	&__btn {
+		border-radius: 10px;
+		align-self: start;
+		padding: 0 22px;
+		font-family: Bebas;
+		font-size: 1.35rem;
+		line-height: 2.5;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #000000;
+	}
+}
+
+//</Location>=======================================================================================================
 
 //</Main block>==============================================================================================
 
