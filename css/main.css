@@ -430,3 +430,45 @@ body {
   display: block;
   color: #000;
 }
+
+.choose {
+  background: #000;
+}
+
+.choose__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choose__item {
+  position: relative;
+  height: 100%;
+}
+
+.choose__column {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+}
+
+.choose__body {
+  text-align: end;
+  padding: 60px 60px 60px 0px;
+}
+
+.choose__text {
+  font-size: 4.125rem;
+  line-height: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.choose__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
