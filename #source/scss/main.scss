@@ -29,20 +29,20 @@
 @import url("https://fonts.googleapis.com/css2?семья=PT+Sans&display=swap");
 
 @font-face {
-	font-family: "AkzidenzGrotesk";
-	src: url("../fonts/AkzidenzGrotesk-BoldCond.eot");
-	src: local("☺"), url("fonts/AkzidenzGrotesk-BoldCond.woff") format("woff"),
-		url("fonts/AkzidenzGrotesk-BoldCond.ttf") format("truetype"),
-		url("fonts/AkzidenzGrotesk-BoldCond.svg") format("svg");
+	font-family: "Conv_BebasNeue Regular";
+	src: url("fonts/BebasNeue Regular.eot");
+	src: local("☺"), url("fonts/BebasNeue Regular.woff") format("woff"),
+		url("fonts/BebasNeue Regular.ttf") format("truetype"), url("fonts/BebasNeue Regular.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: "BebasNeue";
-	src: url("../fonts/BebasNeue Regular.eot");
-	src: local("☺"), url("fonts/BebasNeue Regular.woff") format("woff"),
-		url("fonts/BebasNeue Regular.ttf") format("truetype"), url("fonts/BebasNeue Regular.svg") format("svg");
+	font-family: "Conv_AkzidenzGroteskPro-BoldCn";
+	src: url("fonts/AkzidenzGroteskPro-BoldCn.eot");
+	src: local("☺"), url("fonts/AkzidenzGroteskPro-BoldCn.woff") format("woff"),
+		url("fonts/AkzidenzGroteskPro-BoldCn.ttf") format("truetype"),
+		url("fonts/AkzidenzGroteskPro-BoldCn.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -51,7 +51,7 @@
 
 //<Standard font>===========================================================================================
 
-$fontfamaly: "AkzidenzGrotesk";
+$fontfamaly: "Arial";
 
 //</Standard font>==========================================================================================
 
@@ -109,6 +109,88 @@ body {
 //===========================================================================================================
 
 //</Main block>==============================================================================================
+
+.offer {
+	background: #000;
+	&__row {
+		display: flex;
+	}
+	&__column {
+		flex: 1 1 50%;
+	}
+
+	&__item {
+	}
+
+	&__image {
+	}
+
+	&__body {
+		padding: 82px 0px 75px 62px;
+		color: #fff;
+		width: 50%;
+	}
+
+	&__title {
+		font-size: 2.125rem;
+		line-height: 1.125;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__text {
+		font-family: "PT Sans";
+		font-size: 0.9rem;
+		line-height: 1.667;
+		margin: 0px 0px 55px 0px;
+	}
+
+	&__btns {
+	}
+	&__link {
+		display: inline-block;
+	}
+	&__btn {
+		background-color: #ffffff;
+		margin: 0px 14px 0px 0px;
+	}
+
+	&__view {
+	}
+}
+
+.item {
+	height: 100%;
+	position: relative;
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+.btn {
+	padding: 15px 33px;
+	border-radius: 10px;
+	font-family: Bebas;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.view {
+	font-family: Bebas;
+	font-size: 0.75rem;
+	line-height: 1.667;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #fffffe;
+}
 
 //</Main block>==============================================================================================
 
