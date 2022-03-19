@@ -10,18 +10,21 @@ function ibg() {
 
 ibg();
 
-let header__burger = document.querySelector(".header__burger");
-let header__menu = document.querySelector(".header__menu");
-let header__bottom = document.querySelector(".header-bottom");
-let menu__list = document.querySelector(".menu__list");
+const header__burger = document.querySelector(".header__burger");
+const header__menu = document.querySelector(".header__menu");
+const header__bottom = document.querySelector(".header-bottom");
+const menu__list = document.querySelector(".menu__list");
+const body = document.querySelector("body");
 
 header__burger.onclick = function () {
   header__burger.classList.toggle("active");
   header__menu.classList.toggle("active");
   header__bottom.classList.toggle("active");
+  body.classList.toggle("lock");
 };
 
 menu__list.onclick = function () {
   menu__list.classList.remove("active");
   header__bottom.classList.remove("active");
+  body.classList.toggle("lock");
 };
