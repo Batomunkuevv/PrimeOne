@@ -734,12 +734,22 @@ body {
 }
 @media (max-width: 1200px) {
   .menus {
-    padding: 55px 0;
+    padding: 45px 0;
   }
 }
 @media (max-width: 900px) {
   .menus {
-    padding: 45px 0;
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .menus {
+    padding: 35px 0;
+  }
+}
+@media (max-width: 576px) {
+  .menus {
+    padding: 30px 0;
   }
 }
 .menus__row {
@@ -764,7 +774,7 @@ body {
             flex: 1 1 50%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .menus__column:nth-child(1) {
     margin: 0px 0px 30px 0px;
   }
@@ -773,9 +783,6 @@ body {
   }
 }
 .item-menus {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -787,11 +794,33 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media (max-width: 900px) {
+  .item-menus {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .item-menus__image {
   margin: 0px 0px 25px 0px;
 }
 .item-menus__image img {
   max-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 767px) {
+  .item-menus__image img {
+    height: 170px;
+  }
+}
+@media (max-width: 576px) {
+  .item-menus__image img {
+    height: 150px;
+  }
 }
 .item-menus__title {
   font-size: 2rem;
@@ -801,12 +830,12 @@ body {
   margin: 0px 0px 36px 0px;
   width: 50%;
 }
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .item-menus__title {
     width: 100%;
     font-size: 1.6rem;
     text-align: center;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 15px 0px;
   }
 }
 @media (max-width: 576px) {
@@ -826,10 +855,10 @@ body {
   width: 90%;
   margin: 0px 0px 30px 0px;
 }
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .item-menus__text {
     text-align: center;
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 20px 0px;
   }
 }
 @media (max-width: 576px) {
@@ -840,15 +869,21 @@ body {
 @media (max-width: 400px) {
   .item-menus__text {
     font-size: 0.85rem;
+    width: 95%;
   }
 }
 .item-menus__btn {
   display: block;
   background: #000;
   color: #fff;
-  width: 65%;
+  width: 70%;
   text-align: center;
   margin: 0px 0px 20px 0px;
+}
+@media (max-width: 900px) {
+  .item-menus__btn {
+    width: 40%;
+  }
 }
 @media (max-width: 767px) {
   .item-menus__btn {
