@@ -405,6 +405,21 @@ body {
 	&__body {
 		text-align: end;
 		padding: 60px 60px 60px 0px;
+		@media (max-width: 1200px) {
+			padding: 60px 40px 60px 0px;
+		}
+		@media (max-width: 900px) {
+			padding: 50px 40px 50px 0px;
+		}
+		@media (max-width: 767px) {
+			padding: 40px 20px 40px 0px;
+		}
+		@media (max-width: 576px) {
+			padding: 30px 10px 30px 0px;
+		}
+		@media (max-width: 400px) {
+			padding: 20px 10px 20px 0px;
+		}
 	}
 
 	&__text {
@@ -413,6 +428,21 @@ body {
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		color: #ffffff;
+		@media (max-width: 1200px) {
+			font-size: 3.5rem;
+		}
+		@media (max-width: 900px) {
+			font-size: 3rem;
+		}
+		@media (max-width: 767px) {
+			font-size: 2.2rem;
+		}
+		@media (max-width: 576px) {
+			font-size: 1.5rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 1rem;
+		}
 	}
 
 	&__image {
@@ -430,15 +460,25 @@ body {
 
 .advantages {
 	padding: 50px 0;
-
 	background: #ebebeb;
+	@media (max-width: 1200px) {
+		padding: 40px 0;
+	}
+	@media (max-width: 576px) {
+		padding: 30px 0;
+	}
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -15px;
+		@media (max-width: 576px) {
+			margin: 0 -2px;
+		}
 	}
 
 	&__column {
+		display: flex;
+		justify-content: center;
 		padding: 0 15px;
 		flex: 1 1 50%;
 		&:nth-child(1) {
@@ -446,6 +486,9 @@ body {
 		}
 		&:nth-child(2) {
 			margin: 0px 0px 40px 0px;
+		}
+		@media (max-width: 576px) {
+			padding: 0 2px;
 		}
 	}
 
@@ -456,13 +499,28 @@ body {
 .item-advantages {
 	display: flex;
 	align-items: center;
-	column-gap: 20px;
+	justify-content: center;
 	&__image {
+		margin: 0px 10px 0px 0px;
 		border-radius: 20px;
 		background: #fff;
 		padding: 15px;
+		width: 30%;
 		& img {
 			max-width: 100%;
+		}
+		@media (max-width: 900px) {
+			width: 40%;
+		}
+		@media (max-width: 767px) {
+			width: 50%;
+		}
+		@media (max-width: 576px) {
+			width: 50%;
+			margin: 0px 5px 0px 0px;
+		}
+		@media (max-width: 400px) {
+			width: 70%;
 		}
 	}
 
@@ -475,9 +533,23 @@ body {
 		font-size: 1.5rem;
 		line-height: 1;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.05em;
 		color: #000000;
 		margin: 0px 0px 30px 0px;
+		@media (max-width: 900px) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: 767px) {
+			font-size: 1.25rem;
+			margin: 0px 0px 15px 0px;
+		}
+		@media (max-width: 576px) {
+			font-size: 0.9rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.8rem;
+			margin: 0px 0px 10px 0px;
+		}
 	}
 
 	&__text {
@@ -485,6 +557,12 @@ body {
 		font-size: 1rem;
 		line-height: 1;
 		color: #000000;
+		@media (max-width: 576px) {
+			font-size: 0.7rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.6rem;
+		}
 	}
 }
 
