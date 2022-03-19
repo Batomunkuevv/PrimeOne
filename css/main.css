@@ -485,7 +485,27 @@ body {
 }
 
 .footer {
-  padding: 50px 0;
+  padding: 40px 0;
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 25px 0;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    padding: 15px 0;
+  }
 }
 .footer__row {
   display: -webkit-box;
@@ -498,6 +518,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 400px) {
+  .footer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .footer__copy {
   font-family: "PT Sans";
   font-size: 0.9375rem;
@@ -507,8 +535,26 @@ body {
 .footer__copy span {
   text-decoration: underline;
 }
+@media (max-width: 400px) {
+  .footer__copy {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
 .footer__logo {
   max-width: 100%;
+}
+@media (max-width: 400px) {
+  .footer__logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0px 0px 15px 0px;
+  }
 }
 
 .offer {
@@ -1060,16 +1106,61 @@ body {
 .contacts {
   padding: 75px 0 8px;
 }
+@media (max-width: 1200px) {
+  .contacts {
+    padding: 55px 0 8px;
+  }
+}
+@media (max-width: 900px) {
+  .contacts {
+    padding: 40px 0 8px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding: 30px 0 8px 10px;
+  }
+}
+@media (max-width: 400px) {
+  .contacts {
+    padding: 25px 0 8px 10px;
+  }
+}
 .contacts__title {
   margin: 0px 0px 35px 0px;
   color: #000000;
+}
+@media (max-width: 900px) {
+  .contacts__title {
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__title {
+    margin: 0px 0px 25px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__title {
+    margin: 0px 0px 20px 0px;
+  }
 }
 .contacts__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 -2px;
+}
+@media (max-width: 400px) {
+  .contacts__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .contacts__column {
+  padding: 0 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1085,19 +1176,51 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0px 0px 20px 0px;
 }
+@media (max-width: 400px) {
+  .contacts__item {
+    margin: 0px 0px 15px 0px;
+  }
+}
 .contacts__link {
-  margin: 0px 20px 0px 0px;
+  margin: 5px 20px 0px 0px;
 }
 .contacts__link:nth-child(1) {
-  margin: 0px 20px 0px -7px;
+  margin: 5px 20px 0px -7px;
+}
+@media (max-width: 767px) {
+  .contacts__link:nth-child(1) {
+    margin: 5px 10px 0px -7px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__link:nth-child(1) {
+    margin: 5px 5px 0px -7px;
+  }
+}
+@media (max-width: 400px) {
+  .contacts__link:nth-child(1) {
+    margin: 0px 5px 0px -7px;
+  }
 }
 .contacts__link a {
   padding: 10px;
+}
+@media (max-width: 767px) {
+  .contacts__link {
+    margin: 5px 10px 0px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__link {
+    margin: 5px 5px 0px 0px;
+  }
+}
+@media (max-width: 400px) {
+  .contacts__link {
+    margin: 0px 5px 0px 0px;
+  }
 }
 
 .item-contacts__image {
@@ -1106,11 +1229,26 @@ body {
 .item-contacts__image img {
   max-width: 100%;
 }
+@media (max-width: 576px) {
+  .item-contacts__image {
+    margin: 0px 5px 0px 0px;
+  }
+}
 .item-contacts__text {
   font-family: "PT Sans";
   font-size: 1rem;
   line-height: 1.667;
   color: #000000;
+}
+@media (max-width: 576px) {
+  .item-contacts__text {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .item-contacts__text {
+    font-size: 1rem;
+  }
 }
 
 .location {
@@ -1140,6 +1278,21 @@ body {
 .location__body {
   padding: 55px 0px 55px 60px;
 }
+@media (max-width: 1200px) {
+  .location__body {
+    padding: 45px 0px 45px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .location__body {
+    padding: 35px 0px 35px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .location__body {
+    padding: 25px 0px 25px 30px;
+  }
+}
 .location__title {
   font-size: 2rem;
   line-height: 1;
@@ -1147,6 +1300,21 @@ body {
   letter-spacing: 0.1em;
   color: #ffffff;
   margin: 0px 0px 28px 0px;
+}
+@media (max-width: 767px) {
+  .location__title {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 576px) {
+  .location__title {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .location__title {
+    font-size: 1.25rem;
+  }
 }
 .location__form {
   display: -webkit-box;
@@ -1159,6 +1327,21 @@ body {
   width: 55%;
   font-family: "PT Sans";
 }
+@media (max-width: 900px) {
+  .location__form {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .location__form {
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+  .location__form {
+    width: 90%;
+  }
+}
 .location__input {
   margin: 0px 0px 20px 0px;
   border: 2px solid #959595;
@@ -1166,6 +1349,27 @@ body {
   font-size: 1.125rem;
   line-height: 3.5;
   padding: 0px 0px 0px 10px;
+}
+@media (max-width: 900px) {
+  .location__input {
+    line-height: 3;
+  }
+}
+@media (max-width: 767px) {
+  .location__input {
+    line-height: 2.5;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .location__input {
+    line-height: 2;
+  }
+}
+@media (max-width: 400px) {
+  .location__input {
+    font-size: 0.85rem;
+  }
 }
 .location__textarea {
   height: 100px;
@@ -1177,8 +1381,18 @@ body {
   border: 2px solid #959595;
   resize: none;
 }
+@media (max-width: 767px) {
+  .location__textarea {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  .location__textarea {
+    font-size: 0.85rem;
+  }
+}
 .location__btn {
-  border-radius: 10px;
+  border-radius: 7px;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -1189,4 +1403,26 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #000000;
+}
+@media (max-width: 900px) {
+  .location__btn {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .location__btn {
+    padding: 0 18px;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 576px) {
+  .location__btn {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 400px) {
+  .location__btn {
+    font-size: 0.85rem;
+  }
 }

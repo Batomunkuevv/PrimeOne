@@ -572,16 +572,42 @@ body {
 
 .contacts {
 	padding: 75px 0 8px;
+	@media (max-width: 1200px) {
+		padding: 55px 0 8px;
+	}
+	@media (max-width: 900px) {
+		padding: 40px 0 8px 10px;
+	}
+	@media (max-width: 767px) {
+		padding: 30px 0 8px 10px;
+	}
+	@media (max-width: 400px) {
+		padding: 25px 0 8px 10px;
+	}
 	&__title {
 		margin: 0px 0px 35px 0px;
 		color: #000000;
+		@media (max-width: 900px) {
+			margin: 0px 0px 30px 0px;
+		}
+		@media (max-width: 767px) {
+			margin: 0px 0px 25px 0px;
+		}
+		@media (max-width: 576px) {
+			margin: 0px 0px 20px 0px;
+		}
 	}
 
 	&__row {
 		display: flex;
+		margin: 0 -2px;
+		@media (max-width: 400px) {
+			flex-direction: column;
+		}
 	}
 
 	&__column {
+		padding: 0 2px;
 		display: flex;
 		flex-direction: column;
 		flex: 1 1 50%;
@@ -589,17 +615,37 @@ body {
 
 	&__item {
 		display: flex;
-		align-items: center;
 		margin: 0px 0px 20px 0px;
+		@media (max-width: 400px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__link {
-		margin: 0px 20px 0px 0px;
+		margin: 5px 20px 0px 0px;
 		&:nth-child(1) {
-			margin: 0px 20px 0px -7px;
+			margin: 5px 20px 0px -7px;
+			@media (max-width: 767px) {
+				margin: 5px 10px 0px -7px;
+			}
+			@media (max-width: 576px) {
+				margin: 5px 5px 0px -7px;
+			}
+			@media (max-width: 400px) {
+				margin: 0px 5px 0px -7px;
+			}
 		}
 		& a {
 			padding: 10px;
+		}
+		@media (max-width: 767px) {
+			margin: 5px 10px 0px 0px;
+		}
+		@media (max-width: 576px) {
+			margin: 5px 5px 0px 0px;
+		}
+		@media (max-width: 400px) {
+			margin: 0px 5px 0px 0px;
 		}
 	}
 }
@@ -610,6 +656,9 @@ body {
 		& img {
 			max-width: 100%;
 		}
+		@media (max-width: 576px) {
+			margin: 0px 5px 0px 0px;
+		}
 	}
 
 	&__text {
@@ -617,6 +666,12 @@ body {
 		font-size: 1rem;
 		line-height: 1.667;
 		color: #000000;
+		@media (max-width: 576px) {
+			font-size: 0.9rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 1rem;
+		}
 	}
 }
 
@@ -649,6 +704,15 @@ body {
 
 	&__body {
 		padding: 55px 0px 55px 60px;
+		@media (max-width: 1200px) {
+			padding: 45px 0px 45px 50px;
+		}
+		@media (max-width: 767px) {
+			padding: 35px 0px 35px 40px;
+		}
+		@media (max-width: 576px) {
+			padding: 25px 0px 25px 30px;
+		}
 	}
 
 	&__title {
@@ -658,6 +722,15 @@ body {
 		letter-spacing: 0.1em;
 		color: #ffffff;
 		margin: 0px 0px 28px 0px;
+		@media (max-width: 767px) {
+			font-size: 1.75rem;
+		}
+		@media (max-width: 576px) {
+			font-size: 1.5rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 1.25rem;
+		}
 	}
 
 	&__form {
@@ -665,6 +738,15 @@ body {
 		flex-direction: column;
 		width: 55%;
 		font-family: "PT Sans";
+		@media (max-width: 900px) {
+			width: 70%;
+		}
+		@media (max-width: 767px) {
+			width: 80%;
+		}
+		@media (max-width: 576px) {
+			width: 90%;
+		}
 	}
 
 	&__input {
@@ -674,6 +756,19 @@ body {
 		font-size: 1.125rem;
 		line-height: 3.5;
 		padding: 0px 0px 0px 10px;
+		@media (max-width: 900px) {
+			line-height: 3;
+		}
+		@media (max-width: 767px) {
+			line-height: 2.5;
+			font-size: 1rem;
+		}
+		@media (max-width: 576px) {
+			line-height: 2;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.85rem;
+		}
 	}
 
 	&__textarea {
@@ -685,10 +780,16 @@ body {
 		margin: 0px 0px 20px 0px;
 		border: 2px solid #959595;
 		resize: none;
+		@media (max-width: 767px) {
+			font-size: 1rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.85rem;
+		}
 	}
 
 	&__btn {
-		border-radius: 10px;
+		border-radius: 7px;
 		align-self: start;
 		padding: 0 22px;
 		font-family: Bebas;
@@ -697,6 +798,20 @@ body {
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		color: #000000;
+		@media (max-width: 900px) {
+			font-size: 1.25rem;
+		}
+		@media (max-width: 767px) {
+			padding: 0 18px;
+			font-size: 1.125rem;
+		}
+		@media (max-width: 576px) {
+			font-size: 1rem;
+			padding: 0 15px;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.85rem;
+		}
 	}
 }
 
