@@ -59,7 +59,7 @@ $fontfamaly: "AkzidenzGroteskPro";
 
 //<Variables>===========================================================================================
 
-$maxWidthContainer: 54.25rem;
+$maxWidthContainer: 65rem;
 $maxWidth: 200px;
 //</Variables>==========================================================================================
 
@@ -107,7 +107,7 @@ body {
 .content {
 	flex: 1 1 auto;
 	@media (max-width: 767px) {
-		padding: 6px 0px 0px 0px;
+		padding: 60px 0px 0px 0px;
 	}
 }
 
@@ -145,6 +145,18 @@ body {
 	&__body {
 		padding: 82px 0px 75px 62px;
 		color: #fff;
+		@media (max-width: 1200px) {
+			padding: 62px 0px 75px 62px;
+		}
+		@media (max-width: 767px) {
+			padding: 32px 0px 45px 42px;
+		}
+		@media (max-width: 576px) {
+			padding: 22px 0px 35px 32px;
+		}
+		@media (max-width: 400px) {
+			padding: 22px 0px 25px 12px;
+		}
 	}
 
 	&__title {
@@ -158,6 +170,15 @@ body {
 		line-height: 1.667;
 		margin: 0px 0px 55px 0px;
 		width: 40%;
+		@media (max-width: 767px) {
+			width: 70%;
+		}
+		@media (max-width: 576px) {
+			width: 80%;
+		}
+		@media (max-width: 400px) {
+			width: 100%;
+		}
 	}
 
 	&__btns {
@@ -169,6 +190,9 @@ body {
 	&__btn {
 		background-color: #ffffff;
 		margin: 0px 10px 0px 0px;
+		@media (max-width: 576px) {
+			margin: 0px 5px 0px 0px;
+		}
 	}
 
 	&__view {
@@ -197,17 +221,37 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: #000000;
+	@media (max-width: 767px) {
+		font-size: 0.85rem;
+		padding: 0 25px;
+		line-height: 2.5;
+		border-radius: 5px;
+	}
+	@media (max-width: 576px) {
+		padding: 0 13px;
+		line-height: 2;
+	}
+	@media (max-width: 400px) {
+		padding: 0 10px;
+		font-size: 0.8rem;
+	}
 }
 
 .view {
 	display: block;
 	font-family: Bebas;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	line-height: 1.667;
 	text-decoration: underline;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: #fffffe;
+	@media (max-width: 767px) {
+		font-size: 0.85rem;
+	}
+	@media (max-width: 400px) {
+		font-size: 0.8rem;
+	}
 }
 
 .title {
@@ -215,6 +259,18 @@ body {
 	line-height: 1.125;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	@media (max-width: 1200px) {
+		font-size: 3.5rem;
+	}
+	@media (max-width: 767px) {
+		font-size: 2.5rem;
+	}
+	@media (max-width: 576px) {
+		font-size: 2rem;
+	}
+	@media (max-width: 400px) {
+		font-size: 1.5rem;
+	}
 }
 
 //</Offer>===================================================================================================
@@ -223,11 +279,33 @@ body {
 
 .menus {
 	padding: 75px 0;
+	@media (max-width: 1200px) {
+		padding: 55px 0;
+	}
+	@media (max-width: 900px) {
+		padding: 45px 0;
+	}
 	&__row {
 		display: flex;
+		margin: 0 -10px;
+		@media (max-width: 900px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__column {
+		padding: 0 10px;
+		@media (max-width: 900px) {
+			flex: 1 1 50%;
+		}
+		@media (max-width: 767px) {
+			&:nth-child(1) {
+				margin: 0px 0px 30px 0px;
+			}
+			&:nth-child(2) {
+				margin: 0px 0px 30px 0px;
+			}
+		}
 	}
 
 	&__item {
@@ -235,8 +313,15 @@ body {
 }
 
 .item-menus {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 	&__image {
 		margin: 0px 0px 25px 0px;
+		& img {
+			max-width: 100%;
+		}
 	}
 
 	&__title {
@@ -246,6 +331,18 @@ body {
 		letter-spacing: 0.1em;
 		margin: 0px 0px 36px 0px;
 		width: 50%;
+		@media (max-width: 767px) {
+			width: 100%;
+			font-size: 1.6rem;
+			text-align: center;
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: 576px) {
+			font-size: 1.3rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.95rem;
+		}
 	}
 
 	&__text {
@@ -254,6 +351,16 @@ body {
 		line-height: 1.667;
 		width: 90%;
 		margin: 0px 0px 30px 0px;
+		@media (max-width: 767px) {
+			text-align: center;
+			margin: 0px 0px 25px 0px;
+		}
+		@media (max-width: 576px) {
+			font-size: 1rem;
+		}
+		@media (max-width: 400px) {
+			font-size: 0.85rem;
+		}
 	}
 
 	&__btn {
@@ -263,6 +370,13 @@ body {
 		width: 65%;
 		text-align: center;
 		margin: 0px 0px 20px 0px;
+		@media (max-width: 767px) {
+			width: 50%;
+			margin: 0px 0px 10px 0px;
+		}
+		@media (max-width: 400px) {
+			width: 70%;
+		}
 	}
 
 	&__view {
