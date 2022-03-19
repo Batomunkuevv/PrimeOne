@@ -59,7 +59,7 @@ $fontfamaly: "AkzidenzGroteskPro";
 
 //<Variables>===========================================================================================
 
-$maxWidthContainer: 54.1875rem;
+$maxWidthContainer: 54.25rem;
 $maxWidth: 200px;
 //</Variables>==========================================================================================
 
@@ -89,11 +89,18 @@ body {
 
 .container {
 	max-width: $maxWidthContainer;
+	padding: 0 15px;
 	margin: 0 auto;
+	@media (max-width: 767px) {
+		max-width: none;
+	}
 }
 
 .content {
 	flex: 1 1 auto;
+	@media (max-width: 767px) {
+		padding: 6px 0px 0px 0px;
+	}
 }
 
 //</Main grid>===============================================================================================

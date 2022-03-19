@@ -123,7 +123,7 @@ body {
 }
 @media (max-width: 767px) {
   .content {
-    padding: 6px 0px 0px 0px;
+    padding: 150px 0px 0px 0px;
   }
 }
 
@@ -159,10 +159,8 @@ body {
     content: "";
     position: absolute;
     z-index: 3;
+    background: pink;
     height: 100%;
-    background: #d4cd9e;
-    background: -o-linear-gradient(313deg, #d4cd9e 0%, #e9e5dc 100%);
-    background: linear-gradient(137deg, #d4cd9e 0%, #e9e5dc 100%);
     width: 100%;
     top: 0;
     left: 0;
@@ -176,12 +174,11 @@ body {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    padding: 100px 0 0;
     width: 100%;
     height: 100%;
     top: -100%;
     left: 0;
-    background: #e9e5dc;
+    background: pink;
   }
 }
 .header__menu.active {
@@ -195,15 +192,12 @@ body {
     width: 30px;
     height: 20px;
     position: relative;
-    -webkit-transform: translate(0, -150%);
-        -ms-transform: translate(0, -150%);
-            transform: translate(0, -150%);
   }
   .header__burger::after, .header__burger::before {
     content: "";
     background: #000;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     left: 0;
     -webkit-transition: all 0.3s ease 0s;
@@ -219,7 +213,7 @@ body {
   .header__burger span {
     background: #000;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
     left: 0;
     top: 9px;
@@ -232,57 +226,44 @@ body {
   position: absolute;
   z-index: 4;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 0;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }
 .header__logo::before, .header__logo::after {
   font-family: Bebas;
   font-size: 0.725rem;
   line-height: 1.39;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 1em;
   color: #000000;
   position: absolute;
 }
+@media (max-width: 767px) {
+  .header__logo::before, .header__logo::after {
+    display: none;
+  }
+}
 .header__logo::before {
   content: "NYC'S";
-  top: -30%;
+  top: -50%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-}
-@media (max-width: 767px) {
-  .header__logo::before {
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
 }
 .header__logo::after {
   content: "Catering";
-  bottom: -30%;
+  top: 120%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 @media (max-width: 767px) {
-  .header__logo::after {
-    right: 0;
-    left: 0;
-    -webkit-transform: translate(100%, 0);
-        -ms-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-}
-@media (max-width: 767px) {
   .header__logo {
-    top: -150%;
+    top: -300%;
     height: 30px;
   }
 }
@@ -342,7 +323,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .menu {
@@ -372,11 +352,6 @@ body {
     margin: 0;
   }
 }
-@media (max-width: 767px) {
-  .menu__list {
-    margin: 0;
-  }
-}
 .menu__link {
   white-space: nowrap;
   color: #000000;
@@ -388,38 +363,14 @@ body {
 .menu__link:hover {
   text-decoration: underline;
 }
-@media (max-width: 767px) {
-  .menu__link {
-    font-size: 2rem;
-  }
-}
 .menu li {
   padding: 0 10px;
-}
-@media (max-width: 767px) {
-  .menu li {
-    padding: 0;
-    margin: 0 0 30px 0;
-  }
-  .menu li:nth-child(6) {
-    margin: 0;
-  }
 }
 .menu li:nth-child(3) {
   padding: 0px 155px 0px 10px;
 }
-@media (max-width: 767px) {
-  .menu li:nth-child(3) {
-    padding: 0;
-  }
-}
 .menu li:nth-child(4) {
   padding: 0px 10px 0px 155px;
-}
-@media (max-width: 767px) {
-  .menu li:nth-child(4) {
-    padding: 0;
-  }
 }
 
 .footer {
